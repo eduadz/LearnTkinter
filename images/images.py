@@ -9,7 +9,7 @@ def morte(my_label):
     for widget in root.winfo_children():
         widget.destroy()
     global imgMorte 
-    imgMorte = ImageTk.PhotoImage(Image.open("images/morte.png"))
+    imgMorte = ImageTk.PhotoImage(Image.open("images/morte.png").resize([500,500]))
     telaMorte = Label(image=imgMorte)
     telaMorte.grid(row=0, column=0)
 
@@ -17,7 +17,7 @@ def vida(my_label):
     for widget in root.winfo_children():
         widget.destroy()
     global imgVida
-    imgVida = ImageTk.PhotoImage(Image.open("images/vida.png"))
+    imgVida = ImageTk.PhotoImage(Image.open("images/vida.png").resize([500,500]))
     telaVida = Label(image=imgVida)
     telaVida.grid(row=0, column=0)
     
@@ -25,7 +25,7 @@ def vida(my_label):
 
 root = Tk()
 root.title('Learn Tkinter')
-my_img = ImageTk.PhotoImage(Image.open("images/ladrao.png"))
+my_img = ImageTk.PhotoImage(Image.open("images/ladrao.png").resize([500,500]))
 my_label = Label(image=my_img)
 my_label.grid()
 
