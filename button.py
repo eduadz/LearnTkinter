@@ -4,7 +4,7 @@ from tkinter import *
 root = Tk()
 
 def myClick():
-    myLabel = Label(root, text="Penis")
+    myLabel = Label(root, text="Clicked")
     myLabel.pack()
 
 
